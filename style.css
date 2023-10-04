@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(60,60,60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Inconsolata';
+}
+
+
+.heading{
+    color: aqua;
+    text-shadow: 2px 2px 20px aqua;
+    letter-spacing: 2px;
+}
+
+
+.container {
+    width: 60vw;
+    max-width: 600px;
+    height: 70vh;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(255, 252, 252, 0.699);
+}
+
+.greet{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greet input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.double{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    gap: 40px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 30px;
+}
+
+input{
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-check-field{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    background: red;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button :hover{
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.506) ;
+    scale: 0.96;
+}
+
+/* liste elemanı */
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 100%;
+}
+
+.expense{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.expense #title{
+    font-family:'Montserrat';
+}
+
+
+.expense #price{
+    color: red;
+}
+
+.expense img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* ÖDENEN ELEMANA UYGULANIR */
+
+.paid{
+    opacity: 0.6;
+}
+
+.paid #title{
+    text-decoration: line-through;
+}
+
+.paid #price{
+    color: green;
+}
+
+/* toplam alanı */
+
+.sum{
+    background: rgb(0, 0, 78);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#price-info{
+    color: yellow;
+}
+
+select{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* 700px altında */
+
+@media (max-width:700px){
+    .heading{
+        display: none;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        max-width: none;
+        border-radius: 0px;
+    }
+}
